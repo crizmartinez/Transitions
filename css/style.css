@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img1 {
+    width: 50%;    
+}
+
+.img2 {
+    width: 50%;
+}
+
+.img1 {
+    transition-property: width;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+    margin: 20px;
+}
+
+.img1:hover {
+    width: 450px;
+}
+
+.img2 {
+    transition-property: height;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+    transition-delay: 3s;
+    margin: 20px;
+}
+
+.img2:hover {
+    height: 300px;
+}
+
+@keyframes popup {
+    25% {background-color: cyan;}
+    75% {background-color: darkviolet;}
+    100% {background-color: firebrick;}
+}
+h1 {
+    background-color: coral;
+    padding: 50px;
+}
+
+h1 {
+    animation-name: popup;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+}
